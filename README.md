@@ -1,13 +1,10 @@
 # A Comparative Study on Performance of Different Congestion Control Algorithms
-
+```
 Supervisor: 
-
 Syed Md. Mukit Rashid
-
 Lecturer, Dept. of CSE
-
 Bangladesh University of Engineering and Technology
-
+```
 
 ## Contents
 
