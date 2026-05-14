@@ -116,13 +116,13 @@ was inspired from the algorithm presented in [2] (Kumar et al.,
 The following parameters were varied to analyze performance
 metrics. Here Txrange = 20 and Maxrange = 80.
 
-| nodes | flows | packets |
-|---------|---------|--------------------------------------|
-| 20      | 10      | 100                                  | 1*Tx\_range |
-| 40      | 20      | 200                                  | 2*Tx\_range |
-| 60      | 30      | 300                                  | 3*Tx\_range |
-| 80      | 40      | 400                                  | 4*Tx\_range |
-| 100     | 60      | 500                                  | 5*Tx\_range |
+| nodes | flows | packets per second | coverage area |
+|-------|-------|-------------------|---------------|
+| 20    | 10    | 100               | 1×Tx\_range  |
+| 40    | 20    | 200               | 2×Tx\_range  |
+| 60    | 30    | 300               | 3×Tx\_range  |
+| 80    | 40    | 400               | 4×Tx\_range  |
+| 100   | 60    | 500               | 5×Tx\_range  |
 
 
 ## 4 Overview of the Proposed Algorithm
@@ -509,15 +509,15 @@ put by varying different parameters.
 </p>
 
 <p align="center">
-<img src="images/task-a2/Flow vs Average Throughput(Kbps).jpg" alt="Alt Text">
+<img src="images/task-b/Flow vs Average Throughput(Kbps).jpg" alt="Alt Text">
 <br>
 </p>
 <p align="center">
-<img src="images/task-a2/nodes vs Average Throughput(Kbps).jpg" alt="Alt Text">
+<img src="images/task-b/nodes vs Average Throughput(Kbps).jpg" alt="Alt Text">
 <br>
 </p>
 <p align="center">
-<img src="images/task-a2/Packets Per Second vs Average Throughput(Kbps).jpg" alt="Alt Text">
+<img src="images/task-b/Packets Per Second vs Average Throughput(Kbps).jpg" alt="Alt Text">
 <br>
 <em>Figure 14: Parameters vs Average Throughput(Kbps)</em>
 </p>
@@ -574,8 +574,7 @@ lost packets of TcpDctcp and TcpSwift.
 
 ### 7.1 Task A1 - Wired
 
-
-
+Analysis on the wired topology showed that TcpNewReno and TcpWestwood perform comparably under point-to-point links with low error rates (0.01%). Both algorithms achieve high packet delivery ratios. TcpWestwood exhibits slightly more stable throughput due to its bandwidth estimation mechanism, which allows it to avoid aggressive window reductions caused by spurious losses. As the number of flows or nodes increases, both algorithms experience increased delay and reduced per-flow throughput due to link contention, but overall network utilization remains high.
 
 ### 7.2 Task A2 - Wireless
 
@@ -584,7 +583,7 @@ better in wireless networks that wired networks. Further analy-
 sis is described on following table.
 
 <p align="center">
-<img src="images\sum-table1.JPG" alt="Alt Text">
+<img src="images/sum-table1.JPG" alt="Alt Text">
 <br>
 </p>
 
@@ -603,7 +602,7 @@ of that the exact scenario of a data center could not be depicted
 in the simulation.
 
 <p align="center">
-<img src="images\sum-table2.JPG" alt="Alt Text">
+<img src="images/sum-table2.JPG" alt="Alt Text">
 <br>
 </p>
 
